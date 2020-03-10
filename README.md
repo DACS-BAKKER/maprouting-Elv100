@@ -18,3 +18,9 @@ The class heirarchy/dependancies are as follows:
 `WeightedGraphBuilder` encodes graphs as "adjacency matrix" where an array of `City.java`'s are the cities, which each have a `LinkedList.java` of connections.
 `USAEncoder.java` encodes any "map data" into a given graph. The three included are `usa.txt`, `usaMini.txt`, `usaTiny.txt`.
 `MinPQ.java` is the priority queue used in Dijkstra's Algorithm. It's implemented with a heap. It's generic, but currently takes in `PairNode.java`'s which store a given city's Index and Weight. The weight is calculated based on pervious nodes.
+
+
+## Notes
+For more complicated solves, the algorithm can take several seconds. Please wait for it to solve. Upon trying to isolate why it's so slow, I believe it's due to the "visited" linkedlist searches. Though it saves space, a long array might be faster.
+
+Though I tried graphics, I couldn't get them to work. They're not included here. Sorry.
