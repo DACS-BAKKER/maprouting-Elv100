@@ -12,7 +12,7 @@ To use the program, run MasterRunner.java's main. The console will prompt you fr
 ## Class Structure Overview
 The class heirarchy/dependancies are as follows:
 
-IMAGE
+![](DijkstrasClasses.png)
 
 `MasterRunner.java`, being the "front end," is what the user interacts with. To find a path from inputted start and end indices (not shown) utilizes  `DijkstrasAlg.java` which requires a Weighted Graph that's encoded with a map. `WeightedGraphBuilder.java` and `USAEncoder.java` work together to create this Map-encoded-graph. 
 `WeightedGraphBuilder` encodes graphs as "adjacency matrix" where an array of `City.java`'s are the cities, which each have a `LinkedList.java` of connections.
